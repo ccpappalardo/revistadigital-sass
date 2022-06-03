@@ -55,9 +55,9 @@ html {
 
 .titulos {
   text-decoration: none;
+  padding: 1em;
   font-size: 1.5em;
   color: black;
-  margin: 15px;
 }
 
 .titulos-secciones {
@@ -75,29 +75,38 @@ html {
   white-space: nowrap;
 }
 
+.texto {
+  margin: 1em;
+  text-align: justify;
+}
+
 /* NAV MENU */
 
 #menu-mobile {
   display: none;
 }
 
+.nav-flex {
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0 !important;
+}
 nav {
   background: #5628ba;
   color: #fcf6f6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
+}
+.navbar-icono {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(19, 14, 29,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 nav ul {
   list-style: none;
 }
-
+/*
 nav ul li {
   display: inline-block;
   padding: 0.5em;
-}
+}*/
 
 nav div a:hover {
   color: #fcf6f6;
@@ -114,33 +123,20 @@ nav ul li a:hover {
 /* ARTICULOS - SECCIONES */
 .literatura {
   margin-top: 0.5em;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
 }
 
 .podcast {
   margin-top: 0.5em;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
 }
 
 .fotografia {
   margin-top: 0.5em;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
 }
 
 .articulo-btn {
   margin: 10px;
+  display: flex;
+  justify-content: center;
 }
 .articulo-btn a {
   padding: 10px 20px;
@@ -170,7 +166,6 @@ nav ul li a:hover {
   padding: 1em;
   font-weight: bolder;
   font-size: 1.8em;
-  margin: 10px;
   width: 100%;
 }
 
@@ -187,6 +182,7 @@ nav ul li a:hover {
   text-align: center;
   border: 0.1em solid rgb(104, 98, 111);
   padding: 1em;
+  align-items: center;
 }
 
 .articulo img {
@@ -220,10 +216,9 @@ nav ul li a:hover {
 }
 
 .seccion-podcast-encabezado {
-  padding: 1em;
   font-weight: bolder;
   font-size: 1.8em;
-  margin: 10px;
+  padding: 1em;
   width: 100%;
 }
 .seccion-podcast-encabezado a {
@@ -234,10 +229,9 @@ nav ul li a:hover {
 /* FOTOGRAFÍA - PAGINA */
 
 .seccion-fotografia-encabezado {
-  padding: 1em;
   font-weight: bolder;
   font-size: 1.8em;
-  margin: 10px;
+  padding: 1em;
   width: 100%;
 }
 .seccion-fotografia-encabezado a {
@@ -297,11 +291,12 @@ footer ul {
 footer a {
   text-decoration: none;
   color: #fcf6f6;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 a:hover {
   color: rgb(104, 98, 111);
 }
+
 .footer-title {
   color: #fcf6f6;
   padding-bottom: 0.625rem;
@@ -418,9 +413,11 @@ iframe {
   .footer-main-item {
     display: none;
   }
+  /*
   nav ul li {
     display: none;
   }
+  */
 
   .fotografia-pagina-articulo-galeria {
     margin-top: 0.5em;
@@ -470,7 +467,7 @@ iframe {
   #menu-mobile {
     display: none;
   }
-
+  /*
   .literatura {
     display: grid;
     grid-template-columns: 1fr;
@@ -490,14 +487,16 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
-  }
+  }*/
 
+  /*
   nav ul {
     display: none;
   }
+  
   nav ul li a {
     display: none;
-  }
+  }*/
 
   .literatura .articulo img {
     object-fit: cover;
@@ -550,12 +549,14 @@ iframe {
     width: 100%;
     height: auto;
   }
+  /*
   .literatura {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+  */
 
   .podcast {
     display: grid;
@@ -582,9 +583,10 @@ iframe {
   .fotografia .articulo img {
     object-fit: cover;
   }
+  /*
   nav ul li {
     display: none;
-  }
+  }*/
   .ft-legal ul li a {
     display: none;
   }
@@ -599,14 +601,11 @@ iframe {
   .footer-main-item {
     display: none;
   }
-
+  /*
   .podcast-pagina-articulo img {
     width: 80%;
     height: auto;
-  }
-  .podcast-pagina-articulo .texto {
-    margin: 1em;
-  }
+  }*/
 
   .fotografia-pagina-articulo-galeria img {
     width: 80%;
