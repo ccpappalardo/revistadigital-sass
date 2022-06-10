@@ -395,21 +395,7 @@
       width: 100%;
       height: auto;
     }
-  
-    .podcast {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 20px;
-    }
-  
-    .fotografia {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 20px;
-    }
-  
+   
     .ft-legal ul li a {
       display: none;
     }
