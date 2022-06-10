@@ -1,0 +1,49 @@
+
+  /* ENCABEZADO IMAGEN */
+  .encabezado {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url("../assets/images/juansola.jpg") no-repeat 0 center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+
+    @media screen and (max-width: 1024px) {
+       width: auto;
+    }
+
+    @media screen and (max-width: 780px) {
+        width: auto;
+        height: 350px;
+    }
+    @media screen and (max-width: 480px) {
+        width: auto;
+        height: 250px;
+    }
+     
+  }
+  
+  .encabezado-btn {
+    background: $color_fondo_btn;
+    padding: 0.5em;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    @media screen and (max-width: 780px) {
+            left: 38%;
+            font-size: 1em;
+    } 
+    @media screen and(max-width: 480px){
+            left: 38%;
+            font-size: 0.5em;
+    }
+   }
+
+  
+  .btn-flotante {
+    text-decoration: none;
+    color:$color_principal;
+  }

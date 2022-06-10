@@ -1,0 +1,68 @@
+/* NAV MENU */
+#menu-mobile {
+    display: none; 
+    @media screen and (max-width: 1024px) {
+       display: none;
+    }
+    @media screen and (max-width: 780px) {
+        display: none;     
+    }
+    @media screen and (max-width: 480px) {
+        margin: 0 auto;
+        display: block;
+    }
+
+  }
+
+#menu-desktop {
+      @media screen and (max-width: 1024px) {
+          display: block;
+          margin: 0 auto;
+      }
+
+      @media screen and (max-width: 780px) {
+          display: block;
+          margin: 0 auto;
+      }
+      @media screen and (max-width: 480px) {
+          display: none;
+      }
+  }
+
+
+.nav-flex {
+justify-content: space-between;
+align-items: center;
+flex-grow: 0 !important; }
+
+ 
+nav {
+      background:$color_principal;
+      color: $color_links;
+        ul {
+            list-style: none; 
+            li{
+                a{
+                color: $color_links;
+                text-decoration: none;
+                  &:hover{
+                      color:$color_links_hover;
+                  }
+                } 
+            }
+        
+    }
+    div{
+        a{
+            &:hover{
+                color: $color_links;  
+            }
+        }
+    }
+
+}
+
+ .navbar-icono {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(19, 14, 29,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+ 
+   
