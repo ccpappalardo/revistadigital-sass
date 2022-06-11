@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* RESET GLOBAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,8 +7,21 @@
   outline: 0;
   vertical-align: baseline; }
 
-/* VARIABLES DE COLORES */
-/* NAV MENU */
+.titulos {
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1.5em;
+  color: black; }
+
+.mediana {
+  font-weight: 1em; }
+
+.margen-izquierdo {
+  margin-left: 2em; }
+
+.centrar {
+  text-align: center; }
+
 #menu-mobile {
   display: none; }
   @media screen and (max-width: 1024px) {
@@ -112,22 +124,6 @@ html {
 
 .fotografia .articulo img {
   object-fit: cover; }
-
-/* FUENTES - ESTILOS */
-.mediana {
-  font-weight: 1em; }
-
-.margen-izquierdo {
-  margin-left: 2em; }
-
-.centrar {
-  text-align: center; }
-
-.titulos {
-  text-decoration: none;
-  padding: 1em;
-  font-size: 1.5em;
-  color: black; }
 
 .titulos-secciones {
   text-decoration: none;

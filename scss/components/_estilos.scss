@@ -1,0 +1,19 @@
+//Se aplican listas
+
+.titulos {
+    text-decoration: none;
+    padding: 1em;
+    font-size: nth($size,2);
+    color:$color_letra_negro;
+  }
+
+  //Se aplica maps
+  .mediana {
+    font-weight: map-get($estilos_fuentes, mediana);
+  }  
+  .margen-izquierdo {
+    margin-left: map-get($estilos_fuentes, margen-izquierdo);
+  }  
+  .centrar {
+    text-align: map-get($estilos_fuentes, centrar);
+  }

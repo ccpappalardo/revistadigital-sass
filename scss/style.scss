@@ -1,8 +1,11 @@
 // Modules and Variables
 @import "base/_reset";
+@import "base/_listas";
 @import "base/_colores"; 
+@import "base/_estilos_fuentes";
 
 // Componentes
+@import "components/_estilos";
 @import "components/_menunav";
 @import "components/_header";
 @import "components/_cssanterior";
