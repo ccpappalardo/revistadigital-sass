@@ -1,0 +1,49 @@
+.podcast {
+    margin-top: 0.5em;
+    .articulo img {
+        object-fit: cover;
+      }    
+}
+
+.podcast-pagina {
+    margin-top: 0.5em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  
+  .podcast-pagina-articulo {
+    text-align: center;
+    padding: 1em;
+    img {
+        width: 400px;
+        height: 400px;
+        @media screen and (max-width: 780px) {
+            width: 70%;
+            height: auto;
+        }
+    }
+    .texto {
+        margin: 2em;
+        text-align: map-get($estilos_fuentes, justificar);
+    }
+}
+
+
+.podcast-iframe {
+    margin: 2em;
+}
+
+//Aplicando mixin a los Encabezados--
+.seccion-podcast-encabezado {
+    font-weight: bolder;
+    font-size: 1.8em;
+    padding: 1em;
+    width: 100%;
+    a{
+        @include setEncabezados($color-encabezado-podcast);
+        
+    }
+} 

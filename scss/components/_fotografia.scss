@@ -1,0 +1,68 @@
+//Pagina Fotografia
+.fotografia {
+    margin-top: 0.5em;
+     .articulo img {
+        object-fit: cover;
+      }
+       
+  }
+
+.fotografia-pagina {
+    margin-top: 0.5em;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    .texto {
+        margin: 2em;
+        text-align: map-get($estilos_fuentes, justificar);
+      }
+}
+  
+.fotografia-pagina-articulo {
+    text-align: center;
+    padding: 1em;
+   img {
+    width: 40%;
+    height: auto;
+    }
+} 
+
+.fotografia-pagina-articulo-galeria {
+    margin-top: 0.5em;
+    padding: 1em;
+    display: flex;
+    position: row;
+    gap: 20px;
+    img{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      img{
+        max-width: 500px;
+        margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+       img {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+}
+
+.seccion-fotografia-encabezado {
+    font-weight: bolder;
+    font-size: 1.8em;
+    padding: 1em;
+    width: 100%;
+    a{
+        @include setEncabezados($color-encabezado-fotografia); 
+    }
+}

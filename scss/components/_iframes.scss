@@ -1,0 +1,33 @@
+iframe {
+    margin: auto;
+    display: block;
+    @media screen and (max-width: 780px) {
+        margin: auto;
+        display: block;
+        a{
+            width: 500;
+            height: 300;    
+        }
+    }
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        height: auto; 
+    }
+
+}
+
+.mapa {
+    margin: 2em;
+}
+
+.mapa iframe {
+margin: auto;
+display: block;
+
+    @media screen and (max-width: 480px) {
+        width: 300;
+        height: 100; 
+    }
+}
+
+

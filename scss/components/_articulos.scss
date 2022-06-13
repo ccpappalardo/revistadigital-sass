@@ -1,0 +1,43 @@
+//Articulos
+
+.articulo-btn {
+    margin: 10px;
+    @extend %displayflex-content-center;
+    a{
+        padding: 10px 20px;
+        text-decoration: none;
+        color: $color_principal;
+        @extend %bordes-articulos;
+    }
+}
+
+.articulo {
+    text-align: map-get($estilos_fuentes, centrar);
+    @extend %bordes-articulos;
+    padding: nth($size,1);
+    align-items: center;
+    img {
+        width: 280px;
+        height: 250px;
+      }
+}
+
+  //Seccion  Literatura
+
+.literatura {
+    margin-top: 0.5em;
+     .articulo img {
+        object-fit: cover;
+      }
+}
+
+.seccion-literatura-encabezado {
+    padding: 1em;
+    font-weight: bolder;
+    font-size: 1.8em;
+    width: 100%;
+    a{
+        @include setEncabezados($color-encabezado-literatura); 
+    }
+  }
+  

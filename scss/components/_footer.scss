@@ -1,0 +1,123 @@
+//Aplicando Extends
+.footer-main {
+    padding: 1.25rem 1.875rem;
+    @extend %displayflex-content-center;
+}
+.ft-social-list {
+    @extend %displayflex-content-center;
+    border-top: 1px $color_links_hover solid;
+    padding-top: 1.25rem;
+}
+
+.footer-title {
+    color: $color_links;
+    padding-bottom: 0.625rem;
+}
+//Aplicando estilos del footer
+footer {
+    background: $color_gradiente_footer;
+    color: $color_links;
+    line-height: 1.5;
+    margin-top: 1em;
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    a{
+        text-decoration: none;
+        color: $color_links;
+        font-size: 1em;
+        &:hover{
+            color:$color_links_hover;
+        }
+        @media screen and (max-width: 780px) {
+         font-size: 1em;
+        }   
+    }
+  }
+  
+// FOOTER MAIN ITEM
+
+  .footer-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+  }
+  
+// FOOTER MAIN - FORM SUBSCRIPCION
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+    input[type="email"] {
+        border: 0;
+        padding: 0.625rem;
+        margin-top: 0.3125rem;
+    }
+    input[type="submit"] {
+        background-color: $color_fondo_btn;
+        color:$color_principal;
+        cursor: pointer;
+        border: 0;
+        padding: 0.625rem 0.9375rem;
+        margin-top: 0.3125rem;
+    }
+}
+
+//FOOTER LEGAL
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: $color_links_hover;
+    ul li a{
+     @media screen and (max-width: 480px) {
+        display: none;
+     }  
+    }
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    li {
+    margin: 0.125rem 0.625rem;
+    }
+    li:nth-last-child(2) {
+        flex: 1;
+    }
+}
+
+// FOOTER SOCIAL 
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+    li {
+        margin: 0.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+//SUBSCRIBITE
+
+#subscribite {
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+
+}

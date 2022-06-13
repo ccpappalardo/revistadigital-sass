@@ -1,0 +1,10 @@
+//Extends
+
+%displayflex-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+%bordes-articulos{
+    border: 0.1em solid $color_links_hover;
+}

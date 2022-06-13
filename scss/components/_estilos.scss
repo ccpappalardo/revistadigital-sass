@@ -17,3 +17,29 @@
   .centrar {
     text-align: map-get($estilos_fuentes, centrar);
   }
+
+  .texto {
+    margin: nth($size,1);
+    text-align: map-get($estilos_fuentes, justificar );
+  }
+
+//Estilos del body
+html {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+    
+  
+  .titulos-secciones {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .logo {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    margin: 15px;
+    font-weight: bolder;
+    white-space: nowrap;
+  }

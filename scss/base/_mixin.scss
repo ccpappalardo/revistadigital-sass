@@ -1,0 +1,7 @@
+@mixin setEncabezados($color){
+    text-decoration: none;
+    color: $color;
+    &:hover{
+        color:$color_links_hover;
+    }
+}
