@@ -1,3 +1,8 @@
+//Estilos del body
+html {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 //Se aplican listas
 
 .titulos {
@@ -21,11 +26,6 @@
   .texto {
     margin: nth($size,1);
     text-align: map-get($estilos_fuentes, justificar );
-  }
-
-//Estilos del body
-html {
-    font-family: "Roboto Condensed", sans-serif;
   }
     
   

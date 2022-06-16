@@ -6,12 +6,8 @@
   outline: 0;
   vertical-align: baseline; }
 
-.articulo-btn, .footer-main, .ft-social-list {
-  display: flex;
-  justify-content: center; }
-
-.articulo-btn a, .articulo {
-  border: 0.1em solid #68626f; }
+html {
+  font-family: "Roboto Condensed", sans-serif; }
 
 .titulos {
   text-decoration: none;
@@ -32,9 +28,6 @@
   margin: 1em;
   text-align: justify; }
 
-html {
-  font-family: "Roboto Condensed", sans-serif; }
-
 .titulos-secciones {
   text-decoration: none;
   font-size: 1.5em;
@@ -47,6 +40,13 @@ html {
   margin: 15px;
   font-weight: bolder;
   white-space: nowrap; }
+
+.articulo-btn, .footer-main, .ft-social-list {
+  display: flex;
+  justify-content: center; }
+
+.articulo-btn a, .articulo {
+  border: 0.1em solid #68626f; }
 
 .articulo-btn {
   margin: 10px; }

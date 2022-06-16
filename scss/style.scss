@@ -3,11 +3,12 @@
 @import "base/_listas";
 @import "base/_colores"; 
 @import "base/_estilos_fuentes";
+//Estilo del body
+@import "components/_estilos";
 @import "base/_extends";
 @import "base/_mixin";
 
 // Componentes
-@import "components/_estilos";
 @import "components/_articulos";
 @import "components/_fotografia";
 @import "components/_podcast";
