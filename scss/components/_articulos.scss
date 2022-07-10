@@ -8,7 +8,14 @@
         text-decoration: none;
         color: $color_principal;
         @extend %bordes-articulos;
+        &:hover{
+          color:$color_links;
+          background-color: $color_principal;
+          
+        }
     }
+    
+    
 }
 
 .articulo {

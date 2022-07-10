@@ -58,6 +58,9 @@ html {
     padding: 10px 20px;
     text-decoration: none;
     color: #5628ba; }
+    .articulo-btn a:hover {
+      color: #fcf6f6;
+      background-color: #5628ba; }
 
 .articulo {
   text-align: center;
