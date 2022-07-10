@@ -27,7 +27,11 @@ html {
     margin: nth($size,1);
     text-align: map-get($estilos_fuentes, justificar );
   }
-    
+
+  .texto::first-letter {
+    font-size: 130%;
+    font-weight: 600;
+  }  
   
   .titulos-secciones {
     text-decoration: none;
